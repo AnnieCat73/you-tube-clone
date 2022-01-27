@@ -1,0 +1,11 @@
+const seeReponseButtons = document.querySelectorAll('.see-response-container button');
+
+seeReponseButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const container = button.parentElement;
+        const responseList = container.nextElementSibling;
+
+        container.style.display = 'none';
+        responseList.style.display = 'block';
+    });
+});

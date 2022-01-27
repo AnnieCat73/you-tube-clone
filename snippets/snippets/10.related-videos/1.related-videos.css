@@ -1,0 +1,33 @@
+#related-videos > ul > li {
+    margin-bottom: 12px;
+    list-style: none;
+}
+
+#related-videos > ul > li:last-of-type {
+    margin-bottom: 0;
+}
+
+#related-videos > ul > li article {
+    min-height: 90px;
+    max-height: 90px;
+    overflow-y: hidden;
+}
+
+#related-videos > ul > li img {
+    height: 100%;
+    width: 100%;
+}
+
+#related-videos > ul > li h4 {
+    max-height: 3.75em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#related-videos > ul > li p {
+    font-size: 1.2rem;
+    color: rgba(17, 17, 17, 0.6);
+}

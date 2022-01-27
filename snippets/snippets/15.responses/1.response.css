@@ -1,0 +1,10 @@
+.response {
+    margin-bottom: 15px;
+    padding: 0;
+    border-bottom: 0;
+}
+
+.response > img {
+    width: 26px;
+    height: 26px;
+}

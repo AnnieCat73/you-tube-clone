@@ -1,0 +1,21 @@
+#social-container {
+    padding: 12px 0;
+}
+
+.social-item {
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.social-item.active {
+    color: #1a599c;
+}
+
+.social-item > img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.social-item > p {
+    font-size: 1.2rem;
+}

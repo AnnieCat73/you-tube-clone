@@ -1,0 +1,44 @@
+h3 {
+    font-size: 1.4rem;
+    line-height: 1.75rem;
+    margin-bottom: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+#channel-details {
+    padding: 12px 0;
+    border-top: 1px solid rgba(136, 136, 136, 0.4);
+    border-bottom: 1px solid rgba(136, 136, 136, 0.4);
+}
+
+#channel-details img {
+    width: 34px;
+    height: 34px;
+}
+
+#channel-subscriber-count {
+    color: rgba(17, 17, 17, 0.6);
+    font-size: 1.2rem;
+}
+
+#channel-details button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 8px;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1.4rem;
+    color: #1a599c;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#channel-details button > img {
+    height: 16px;
+}

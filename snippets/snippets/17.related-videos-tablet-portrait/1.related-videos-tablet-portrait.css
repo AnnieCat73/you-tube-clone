@@ -1,0 +1,7 @@
+@media (min-width: 768px) {
+    #related-videos > ul > li img {
+        height: 17.5vw;
+        min-height: 131px;
+        max-height: inherit;
+    }
+}

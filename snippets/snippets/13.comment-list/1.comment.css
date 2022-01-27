@@ -1,0 +1,40 @@
+.comment {
+    padding: 12px;
+    font-size: 1.1rem;
+    color: rgba(17,17,17, 0.6);
+    border-bottom: 1px solid rgba(135, 135, 135, 0.4);
+}
+
+.comment:last-of-type {
+    border-bottom: none;
+}
+
+.comment > a {
+    font-size: 1.4rem;
+    color: #1a599c;
+}
+
+.my-comment > a > span {
+    background: #1a599c;
+    color: #fff;
+    border-radius: 8px;
+    padding: 1px 6px;
+    display: inline-block;
+}
+
+.comment > p {
+    color: #000;
+    font-size: 1.3rem;
+    margin: 4px 0;
+}
+
+.comment-status-separator {
+    font-size: 2rem;
+    line-height: 1.1rem;
+}
+
+.comment-statistics > img {
+    margin-left: 8px;
+    width: 11px;
+    height: 10px;
+}

@@ -1,0 +1,17 @@
+<script>
+    const downTickButton = document.getElementById('comment-downtick');
+    const upTickButton = document.getElementById('comment-uptick');
+    const commentListContainer = document.getElementById('comment-list-container');
+
+    downTickButton.addEventListener('click', () => {
+        downTickButton.style.display = 'none';
+        upTickButton.style.display = 'block';
+        commentListContainer.style.display = 'block';
+    });
+
+    upTickButton.addEventListener('click', () => {
+        downTickButton.style.display = 'block';
+        upTickButton.style.display = 'none';
+        commentListContainer.style.display = 'none';
+    });
+</script>

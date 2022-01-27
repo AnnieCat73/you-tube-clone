@@ -1,0 +1,14 @@
+.see-response-container > button {
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    outline: none;
+    font-size: 1.4rem;
+    color: #1a599c;
+    cursor: pointer;
+    padding: 10px 8px;
+}
+
+.response-list {
+    display: none;
+}

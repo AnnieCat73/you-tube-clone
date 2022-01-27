@@ -1,0 +1,8 @@
+#video-comments h2 {
+    font-weight: bold;
+}
+
+#comment-uptick,
+#comment-list-container {
+    display: none;
+}

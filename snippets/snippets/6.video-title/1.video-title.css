@@ -1,0 +1,16 @@
+h2 {
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+    margin-bottom: 3px;
+    font-weight: normal;
+}
+
+#video-details > header {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#video-views-count {
+    font-size: 1.2rem;
+    color: rgba(17, 17, 17, 0.6);
+}

@@ -1,0 +1,17 @@
+@media (min-width: 800px) and (orientation: landscape) {
+    #related-videos {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    #related-videos > ul {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #related-videos > ul > li img {
+        height: 135px;
+        min-height: inherit;
+        max-height: inherit;
+    }
+}
