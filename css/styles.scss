@@ -3,3 +3,53 @@
 @import 'layout';
 @import 'mixins';
 @import 'components';
+
+.header__title {
+    color: $color-font-light;
+    font-size: 1.5rem;
+    font-weight: normal;
+    
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2rem 1fr 1.75rem 1.75rem;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1.2em; 
+    align-items: center;
+    padding: 0 0.8em;
+    background: $color-bg-blue;
+    color: $color-font-light;
+    
+}
+
+.header__link{
+    width: 2rem;
+    height: 2rem;
+    text-decoration: none;
+}
+
+#search-videos__icon,
+#settings__icon {
+    padding-left: 0.4em;
+    width: 2.8rem;
+}
+
+
+/*Sections*/
+
+#video__thumbnail {
+    grid-area: video-thumbnail;
+}
+
+#video__details {
+    grid-area: video-details;
+}
+
+#related__videos {
+    grid-area: related-details;
+}
+
+#video__comments {
+    grid-area: video-comments;
+}

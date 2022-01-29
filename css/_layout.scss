@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4.8rem 1fr;
+    
+}
+
+main {
+    display: grid;
+    /*grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, max-content);*/
+    grid:
+        'video-thumbnail' max-content
+        'video-details' max-content
+        'related-details' max-content
+        'video-comments' max-content
+        / 1fr;
+}
+
