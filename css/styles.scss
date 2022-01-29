@@ -38,18 +38,39 @@
 
 /*Sections*/
 
-#video__thumbnail {
+#video-thumbnail {
     grid-area: video-thumbnail;
 }
 
-#video__details {
+
+/*video-details*/
+
+#video-details {
     grid-area: video-details;
+    padding-top: 1.2em; 
 }
 
-#related__videos {
+.details-header {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    &__title {
+        font-size: 1.8rem;
+        line-height: 2.25rem;
+        margin-bottom: 0.3em;
+        font-weight: normal;
+    }
+    &__count {
+        font-size: 1.2rem;
+        color: $color-dark-200;
+    }
+}
+
+/*related-videos*/
+
+#related-videos {
     grid-area: related-details;
 }
 
-#video__comments {
+#video-comments {
     grid-area: video-comments;
 }

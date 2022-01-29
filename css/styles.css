@@ -16,6 +16,12 @@ html {
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
 body {
   display: -ms-grid;
   display: grid;
@@ -69,19 +75,39 @@ main {
 }
 
 /*Sections*/
-#video__thumbnail {
+#video-thumbnail {
   grid-area: video-thumbnail;
 }
 
-#video__details {
+/*video-details*/
+#video-details {
   grid-area: video-details;
+  padding-top: 1.2em;
 }
 
-#related__videos {
+.details-header {
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+}
+
+.details-header__title {
+  font-size: 1.8rem;
+  line-height: 2.25rem;
+  margin-bottom: 0.3em;
+  font-weight: normal;
+}
+
+.details-header__count {
+  font-size: 1.2rem;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+/*related-videos*/
+#related-videos {
   grid-area: related-details;
 }
 
-#video__comments {
+#video-comments {
   grid-area: video-comments;
 }
 /*# sourceMappingURL=styles.css.map */
