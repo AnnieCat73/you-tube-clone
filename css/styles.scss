@@ -65,11 +65,44 @@
     }
 }
 
+.social {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    padding: 1.2em 0;
+
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 0.7em;
+        justify-items: center;
+        font-size: 1.2rem;
+        
+        &--active{
+            color: $color-bg-blue;
+        }
+    }
+
+    &__img {
+        width: 2.4rem;
+        height: 2.4rem;
+        cursor: pointer;
+    }
+    &__title {
+        color: $color-dark-200;
+        
+    }
+}
+
 /*related-videos*/
 
 #related-videos {
     grid-area: related-details;
 }
+
+/*video-comments*/
 
 #video-comments {
     grid-area: video-comments;
