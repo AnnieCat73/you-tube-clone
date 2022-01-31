@@ -48,7 +48,10 @@
 #video-details {
     grid-area: video-details;
     padding-top: 1.2em; 
+    
 }
+
+
 
 .details-header {
     padding-left: 1.2em;
@@ -70,7 +73,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     justify-content: space-between;
-    padding: 1.2em 0;
+    padding: 1.2em 1.2em;
 
     &__item {
         display: grid;
@@ -80,7 +83,7 @@
         justify-items: center;
         font-size: 1.2rem;
         
-        &--active{
+        &--active {
             color: $color-bg-blue;
         }
     }
@@ -97,34 +100,61 @@
 }
 
 .channel {
-
-    &__img {
-
-    }
-
-    &__metadata {
-
-    }
-
-    &__title {
-
-    }
-
-    &__subscriber {
-
-    }
-
-    &__btn {
-
+    display: grid;
+    grid-template-columns: 1fr 11.4rem;
+    grid-template-rows: 1fr;
+    gap: 0.8rem;
+    align-items: center;
+    padding: 1.2em 1.2em;
+    border-top: 1px solid rgba(136, 136, 136, 0.4);
+    border-bottom: 1px solid rgba(136, 136, 136, 0.4);
+    &__link {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        gap: 1.2em;
         &--img {
-
+            width: 3.5rem;
+            height: 3.4rem;
         }
-
+    }
+    &__metadata {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        &--title {
+            color: $color-dark-100;
+        }
+        &--subscriber {
+            color: $color-dark-200;
+            font-size: 1.2rem;
+    
+        }
+    }
+    
+    &__btn {
+        display: flex; 
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0.8em;
+        margin-left: 0.8em;
+        outline: none;
+        border: none;
+        background: transparent;
+        font-size:  1.4rem;
+        color: $color-bg-blue;
+        text-transform: uppercase;
+        &--img {
+            height: 1.6rem;
+        }
         &--span {
-            
+            font-weight: bold;
         }
     }
 }
+
+    
 
 /*related-videos*/
 
