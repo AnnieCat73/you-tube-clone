@@ -155,7 +155,6 @@
 }
 
     
-
 /*related-videos*/
 
 #related-videos {
@@ -166,4 +165,25 @@
 
 #video-comments {
     grid-area: video-comments;
+}
+
+.video {
+
+    &__next {
+
+    }
+
+    &__autoplay {
+
+    }
+
+    &__button {
+
+        &--slider {
+
+        }
+        &--toggle {
+            
+        }
+    }
 }
