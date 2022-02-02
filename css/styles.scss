@@ -161,6 +161,7 @@
     grid-area: related-details;
     padding-bottom: 1.2em;
     border-bottom: 1px solid $color-dark-300;
+    padding: 1.2em 1.2em;
 }
 
 
@@ -205,6 +206,53 @@
             border-radius: 100%;
             background-color: $color-font-light;
             box-shadow: 0 1px 3px $color-dark-300;
+        }
+    }
+}
+
+.related-list {
+
+    &__item {
+        padding-bottom: 1.2em;
+        list-style: none;
+    }
+    &__item:last-of-type {
+        margin-bottom: 0;
+    }
+    &__link {
+
+    }
+
+    &__article {
+        min-height: 9rem;
+        max-height: 9rem;
+        overflow-y: hidden;
+        display: grid;
+        grid-template-columns: 16rem 1fr;
+        grid-template-rows: repeat(2, max-content) 1fr;
+        gap: 0.8em;
+
+        &--img {
+            height: 100%;
+            width: 100%;
+            grid-row: span 3;
+        }
+
+        &--title {
+            max-height: 3.75em;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.75rem;
+            font-size: 1.4rem;
+            margin-bottom: 0.3em;
+            color: $color-dark-100;
+        }
+
+        &--text {
+            font-size: 1.2rem;
+            color: $color-dark-200;
         }
     }
 }
