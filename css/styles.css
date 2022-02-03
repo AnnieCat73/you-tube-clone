@@ -358,7 +358,54 @@ main {
   cursor: pointer;
 }
 
-.comment-list {
+.comment-wrapper {
   display: none;
+}
+
+.profile {
+  margin-top: 1.6em;
+  padding: 1.2em;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.4);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4.8rem 1fr;
+      grid-template-columns: 4.8rem 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile__img {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 100%;
+}
+
+.profile__textarea {
+  padding: 0.6em;
+  outline: none;
+  color: #111;
+  font-size: 1.4rem;
+  resize: vertical;
+  border: 1px solid rgba(135, 135, 135, 0.4);
+}
+
+textarea::-webkit-input-placeholder {
+  color: rgba(135, 135, 135, 0.4);
+}
+
+textarea:-ms-input-placeholder {
+  color: rgba(135, 135, 135, 0.4);
+}
+
+textarea::-ms-input-placeholder {
+  color: rgba(135, 135, 135, 0.4);
+}
+
+textarea::placeholder {
+  color: rgba(135, 135, 135, 0.4);
 }
 /*# sourceMappingURL=styles.css.map */

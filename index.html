@@ -213,8 +213,14 @@
                 <img class="comment-header__downtick" src="images/icons/down-tick.svg" alt="Show Comments">
                 <img class="comment-header__uptick" src="images/icons/up-tick.svg" alt="Hide Comments">
             </header>
-            <div class="comment-list">
-                This is where the comment form and comment list will go
+            <div class="comment-wrapper">
+                <div class="profile">
+                    <img class="profile__img" src="images/profiles/kim.jpeg" alt="Kim">
+                    <textarea class="profile__textarea" placeholder="Add a public comment"></textarea>
+                </div>
+                <div class="comment-list">
+                    This is where the comments will go
+                </div>
             </div>
 
         </section>
@@ -224,7 +230,7 @@
     <script>
         const downTickButton = document.querySelector('.comment-header__downtick');
         const upTickButton = document.querySelector('.comment-header__uptick');
-        const commentListContainer = document.querySelector('.comment-list');
+        const commentListContainer = document.querySelector('.comment-wrapper');
 
         downTickButton.addEventListener('click', () => {
             downTickButton.style.display = 'none';
