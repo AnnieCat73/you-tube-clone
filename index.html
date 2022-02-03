@@ -208,13 +208,36 @@
         </aside>
 
         <section id="video-comments">
+            <header class="comment-header">
+                <h2 class="comment-header__title">Comments &middot; 3</h2>
+                <img class="comment-header__downtick" src="images/icons/down-tick.svg" alt="Show Comments">
+                <img class="comment-header__uptick" src="images/icons/up-tick.svg" alt="Hide Comments">
+            </header>
+            <div class="comment-list">
+                This is where the comment form and comment list will go
+            </div>
 
-            This is where the related comments will go
         </section>
 
     </main>
 
+    <script>
+        const downTickButton = document.querySelector('.comment-header__downtick');
+        const upTickButton = document.querySelector('.comment-header__uptick');
+        const commentListContainer = document.querySelector('.comment-list');
 
+        downTickButton.addEventListener('click', () => {
+            downTickButton.style.display = 'none';
+            upTickButton.style.display = 'block';
+            commentListContainer.style.display = 'block';
+        });
+
+        upTickButton.addEventListener('click', () => {
+            downTickButton.style.display = 'block';
+            upTickButton.style.display = 'none';
+            commentListContainer.style.display = 'none';
+        });
+    </script>
 </body>
 
 </html>

@@ -263,4 +263,29 @@
 
 #video-comments {
     grid-area: video-comments;
+    padding: 1.2em 1.2em;
 }
+
+.comment-header {
+    display: grid;
+    grid-template-columns: 1fr 1.5rem;
+    grid-template-rows: 1fr;
+    &__title {
+        font-weight: bold;
+    }
+
+    &__downtick {
+        cursor: pointer;
+    }
+
+    &__uptick {
+        display: none;
+        cursor: pointer;
+    }
+
+}
+
+.comment-list {
+    display: none;
+}
+

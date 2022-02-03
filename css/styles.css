@@ -333,5 +333,32 @@ main {
 /*video-comments*/
 #video-comments {
   grid-area: video-comments;
+  padding: 1.2em 1.2em;
+}
+
+.comment-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5rem;
+      grid-template-columns: 1fr 1.5rem;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.comment-header__title {
+  font-weight: bold;
+}
+
+.comment-header__downtick {
+  cursor: pointer;
+}
+
+.comment-header__uptick {
+  display: none;
+  cursor: pointer;
+}
+
+.comment-list {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */
