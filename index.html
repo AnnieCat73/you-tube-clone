@@ -219,14 +219,15 @@
                     <textarea class="profile__textarea" placeholder="Add a public comment"></textarea>
                 </div>
                 <div class="comment-list">
-                    <div class="comment my-comment">
-                        <img class="comment__img" src="images/profiles/how-to-anything.png" alt="How To Anything">
-                        <a class="comment__link" href="#" title="How To Anything">
-                            <span class="comment__link--span">
+                    <div class="my-comment">
+                        <img class="my-comment__img" src="images/profiles/how-to-anything.png" alt="How To Anything">
+                        <a class="my-comment__link" href="#" title="How To Anything">
+                            <span class="my-comment__link--span">
                                 How To Anything
                             </span>
                         </a>
-                        <p class="comment__text">Do not hesitate to let me know what you think of my video. Thank you!
+                        <p class="my-comment__text">Do not hesitate to let me know what you think of my video. Thank
+                            you!
                         </p>
                         <div class="comment__statistics">
                             <p class="comment__statistics--time">1 week ago</p>
@@ -237,6 +238,7 @@
                             <img class="comments__statistics--img" src="images/icons/thumbs-down-default.svg"
                                 alt="Thumbs Down">
                         </div>
+
                     </div>
                     <div class="comment">
                         <img class="comment__img" src="images/profiles/kim.jpeg" alt="Kim O'Neil" />
@@ -252,6 +254,14 @@
                                 alt="Thumbs Up" />
                             <img class="comments__statistics--img" src="images/icons/thumbs-down-default.svg"
                                 alt="Thumbs Down" />
+                        </div>
+                        <div class="comment__response">
+                            <button class="comment__response--btn">
+                                See responses
+                            </button>
+                        </div>
+                        <div class="comment__list">
+                            This is where responses will go
                         </div>
                     </div>
                     <div class="comment">
@@ -281,6 +291,7 @@
         const downTickButton = document.querySelector('.comment-header__downtick');
         const upTickButton = document.querySelector('.comment-header__uptick');
         const commentListContainer = document.querySelector('.comment-wrapper');
+        const seeResponsesButtons = document.querySelectorAll('.comment__response--btn');
 
         downTickButton.addEventListener('click', () => {
             downTickButton.style.display = 'none';
@@ -292,6 +303,18 @@
             downTickButton.style.display = 'block';
             upTickButton.style.display = 'none';
             commentListContainer.style.display = 'none';
+        });
+
+
+
+        seeResponsesButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const container = button.parentElement;
+                const responseList = container.nextElementSibling;
+
+                container.style.display = "none";
+                responseList.style.display = "block";
+            });
         });
     </script>
 </body>

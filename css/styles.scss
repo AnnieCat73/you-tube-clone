@@ -316,18 +316,32 @@ textarea::placeholder {
     color: $color-dark-600;
 }
 
-.comment-list {
 
-}
 
 .my-comment {
+    display: grid;
+    grid-template-columns: 4.8rem 1fr;
+    grid-template-rows: repeat(3, max-content);
+    
+    gap: 0.8rem;
+    padding: 1.2em;
+    font-size: 1.1rem;
+    color: $color-dark-200;
+    border-bottom: 1px solid $color-dark-600;
+    &__img {
+        width: 4.8rem;
+        height: 4.8rem;
+        border-radius: 100%;
+        grid-row: span 3;
+        
+    }
 
     &__link {
         font-size: 1.4rem;
-        color: $color-bg-blue;
+        color: $color-font-light;
         &--span {
             background-color: $color-bg-blue;
-            color: $color-light-300;
+            
             border-radius: 8px;
             padding: 0.1em 0.6em;
             display: inline-block;
@@ -359,8 +373,7 @@ textarea::placeholder {
         font-size: 1.4rem;
         color: $color-bg-blue;
         &--span {
-            background: $color-bg-blue;
-            color: $color-font-light;
+            color: $color-bg-blue;
             border-radius: 8px;
             padding: 0.1em 0.6em;
             display: inline-block;
@@ -383,9 +396,29 @@ textarea::placeholder {
             font-size: 2rem;
             line-height: 1.1rem;
         }
+    }
 
-        
-        
+    &__response {
+        grid-column: 2;
+        display: grid;
+        justify-content: center;
+        &--btn {
+            background: transparent;
+            border: none;
+            color: $color-bg-blue;
+            text-transform: uppercase;
+            outline: none;
+            display: inline-block;
+            cursor: pointer;
+            padding: 1em 0.8em;
+            font-size: 1.4rem;
+        }
+       
+    }
+
+    &__list {
+        grid-column: 2;
+        display: none;
     }
 }
 
