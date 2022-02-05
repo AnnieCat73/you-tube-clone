@@ -476,7 +476,7 @@ textarea::placeholder {
   line-height: 1.1rem;
 }
 
-.comment__statistics--img {
+.comments__statistics--img {
   margin-left: 0.8em;
   width: 1.1rem;
   height: 1rem;

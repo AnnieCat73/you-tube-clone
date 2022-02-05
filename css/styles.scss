@@ -377,28 +377,23 @@ textarea::placeholder {
         display: grid;
         grid: 1fr / repeat(5, max-content);
         gap: 0.4rem;
-        &--time {
-
-        }
+        
 
         &--separator {
             font-size: 2rem;
             line-height: 1.1rem;
         }
 
-        &--likes {
-
-        }
-
-        &--img {
-            margin-left: 0.8em;
-            width: 1.1rem;
-            height: 1rem;
-            
-            
-        }
-
+        
+        
     }
+}
+
+.comments__statistics--img {
+    margin-left: 0.8em;
+    width: 1.1rem;
+     height: 1rem;
+            
 }
 
 .comment:last-of-type {
