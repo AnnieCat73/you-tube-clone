@@ -375,7 +375,7 @@ textarea::placeholder {
         &--span {
             color: $color-bg-blue;
             border-radius: 8px;
-            padding: 0.1em 0.6em;
+            padding: 0.1em 0em;
             display: inline-block;
         }
     }
@@ -417,6 +417,7 @@ textarea::placeholder {
     }
 
     &__list {
+        margin-top: 1.5em;
         grid-column: 2;
         display: none;
     }
@@ -431,4 +432,41 @@ textarea::placeholder {
 
 .comment:last-of-type {
     border-bottom: none;
+}
+
+.responder {
+    display: grid;
+    grid-template-columns: 2.6rem 1fr;
+    grid-template-rows: repeat(3, max-content);
+    gap: 0.8rem;
+    padding: 1.2em;
+    font-size: 1.1rem;
+    color: $color-dark-200;
+    
+    margin-bottom: 1.5em;
+    padding: 0;
+    border-bottom: 0;
+    &__img {
+        width: 2.6rem;
+        height: 2.6rem;
+        border-radius: 100%;
+        grid-row: span 3;
+    }
+
+    &__link {
+        font-size: 1.3rem;
+        color: $color-bg-blue;
+        &--span {
+            color: $color-bg-blue;
+            border-radius: 8px;
+            padding: 0.1em 0em;
+            display: inline-block;
+        }
+    }
+
+    &__text {
+        color: $color-dark-700;
+        font-size: 1.2rem;
+        margin: 0.4em 0;
+    }
 }
