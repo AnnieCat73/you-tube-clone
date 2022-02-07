@@ -571,6 +571,17 @@ textarea::placeholder {
   display: inline-block;
 }
 
+.responder__linkmy {
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #1a599c;
+  border-radius: 8px;
+  padding: 0.1em 0.6em;
+  display: inline-block;
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
 .responder__text {
   color: #000;
   font-size: 1.2rem;

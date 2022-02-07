@@ -322,7 +322,6 @@ textarea::placeholder {
     display: grid;
     grid-template-columns: 4.8rem 1fr;
     grid-template-rows: repeat(3, max-content);
-    
     gap: 0.8rem;
     padding: 1.2em;
     font-size: 1.1rem;
@@ -333,7 +332,6 @@ textarea::placeholder {
         height: 4.8rem;
         border-radius: 100%;
         grid-row: span 3;
-        
     }
 
     &__link {
@@ -341,7 +339,6 @@ textarea::placeholder {
         color: $color-font-light;
         &--span {
             background-color: $color-bg-blue;
-            
             border-radius: 8px;
             padding: 0.1em 0.6em;
             display: inline-block;
@@ -355,7 +352,6 @@ textarea::placeholder {
     display: grid;
     grid-template-columns: 4.8rem 1fr;
     grid-template-rows: repeat(3, max-content);
-    
     gap: 0.8rem;
     padding: 1.2em;
     font-size: 1.1rem;
@@ -442,7 +438,6 @@ textarea::placeholder {
     padding: 1.2em;
     font-size: 1.1rem;
     color: $color-dark-200;
-    
     margin-bottom: 1.5em;
     padding: 0;
     border-bottom: 0;
@@ -462,6 +457,17 @@ textarea::placeholder {
             padding: 0.1em 0em;
             display: inline-block;
         }
+
+    }
+
+    &__linkmy {
+        font-size: 1.4rem;
+        color: $color-font-light;
+        background-color: $color-bg-blue;
+        border-radius: 8px;
+        padding: 0.1em 0.6em;
+        display: inline-block;
+        justify-self: left;
     }
 
     &__text {
