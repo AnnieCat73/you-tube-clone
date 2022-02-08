@@ -590,6 +590,9 @@ textarea::placeholder {
 
 /* MEDIA QUERIES */
 @media (min-width: 550px) {
+  main {
+        grid-template-areas: 'video-thumbnail' max-content 'video-details'  'video-comments'  'related-videos';
+  }
   #related-videos .related-list {
     display: -ms-grid;
     display: grid;
@@ -601,6 +604,9 @@ textarea::placeholder {
     gap: 1em;
     padding-left: 8px;
     padding-right: 8px;
+  }
+  #related-videos .related-list .related-list__item {
+    margin-bottom: 0px;
   }
   #related-videos .related-list .related-list__item .related-list__article {
     display: block;
