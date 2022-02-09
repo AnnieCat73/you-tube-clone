@@ -537,7 +537,38 @@ textarea::placeholder {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+/*not works*/
+@media (min-width: 800px) and (orientation: landscape) {
 
-@media (min-width: 80px) and (orientations: landscape) {
+    main {
+        grid: 
+          'video-thumbnail related-videos' max-content
+          'video-details related-videos' max-content
+          'video-comments related-videos' 1fr
+        / 1fr 16rem;
+    }
+
+    #related-videos {
+        padding-left: 0.8em;
+        padding-left: 0.8em;
+
+    }
+
+    #related-videos .related-list {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #related-videos .related-list .related-list__item .related-list__article--img  {
+        height: 8.438rem;
+        min-height: inherit;
+        max-height: inherit;
+    }
+
+    #video-comments {
+        border-bottom: 0;
+    }
 
 }
+/*not works*/
