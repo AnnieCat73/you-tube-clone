@@ -622,4 +622,20 @@ textarea::placeholder {
     padding-top: 4px;
   }
 }
+
+@media (min-width: 768px) {
+  #related-videos .related-list {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  #related-videos .related-list .related-list__item .related-list__article--img {
+    height: 17.5vw;
+    min-height: 131px;
+    max-height: inherit;
+  }
+  #related-videos .related-list {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
 /*# sourceMappingURL=styles.css.map */
